@@ -32,6 +32,7 @@ An Open Source Developer
 
 https://gradle-ssh-plugin.github.io
 
+---
 ### First release on Dec. 2012
 * 2012年の秋頃から開発を始めた
 * 個人のプロダクト
@@ -117,6 +118,7 @@ https://gradle-ssh-plugin.github.io
 * プロダクトを知ってもらう機会
 * ひいては「自分」を知ってもらう機会
 
+---
 ### ブログに書く
 * たまに宣伝する程度でよさそう
 * ニーズを持った人が見に来るとは限らないので、そこまで効果はないかも
@@ -129,6 +131,7 @@ https://gradle-ssh-plugin.github.io
 ### GitHub Flowに慣れるまで少し時間が掛かった
 * Pull Requestベースのレビューやディスカッション
 
+---
 ### 英語のディスカッションが難しい
 * 仕様を収束させるまでの説明力
 * 何を言ってるか分からないこともある
