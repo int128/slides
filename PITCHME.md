@@ -17,15 +17,17 @@ Sep 7, 2017
 ---
 ## App Engine Standard
 
-✅爆発的な需要に追従できるインフラが揃っている
+✅爆発的な需要に追従できるインフラ
 - Instance Auto Scale
 - Datastore
 
-✅12 factorで必要な機能が揃っている
+✅PaaSに必要な機能 (not CaaS)
 - Memcache
 - Task Queue
 - Static Content CDN
 - Log Monitoring
+
+✅トラフィックが少ないうちは無料枠で運用できる
 
 ---
 ## App Engine of GCP
@@ -48,7 +50,7 @@ Sep 7, 2017
 
 ⛔Cons
 - WARのデプロイ（12 factorではJAR）
-- 初回アクセス時のスピンアップに数秒（Goは1秒以内）
+- 初回アクセス時のスピンアップに数秒（Goは1秒未満）
 
 ---
 ## Spring Boot
@@ -63,7 +65,7 @@ Sep 7, 2017
 ---
 ## 標準的なBoot Appと異なる点
 
-- JAR実行は使えない。App Engine Dev ServerでWAR実行
+- JARは利用できない。ローカルでもDev ServerでWARを実行
 - ログはSLF4J→Logback→標準出力→Stackdriver
 - TaskQueueやMemcacheに依存するユニットテストではApp Engine Testingのヘルパクラスを利用
 
