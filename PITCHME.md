@@ -20,11 +20,11 @@ Software Engineer at Tokyo
 ---
 ## App Engine Standard
 
-爆発的な需要に追従できるインフラが揃っている
+✅爆発的な需要に追従できるインフラが揃っている
 - Instance Auto Scale
 - Datastore
 
-12 factorで必要な機能が揃っている
+✅12 factorで必要な機能が揃っている
 - Memcache
 - Task Queue
 - Static Content CDN
@@ -44,38 +44,33 @@ Service Accountで各サービスと連携できる
 ---
 ## App Engine Java
 
-Pros
+✅Pros
 - IDEによるタイプセーフな開発
 - 数多くのJVM言語やライブラリ（Kotlin, Scala, Groovy...）
 
-Cons
+⛔Cons
 - WARのデプロイ（12 factorではJAR）
 - 初回アクセス時のスピンアップに数秒（Goは1秒以内）
 
 ---
 ## Spring Boot
 
-Pros
+✅Pros
 - 標準的な設定が揃っているのでドメインに集中できる
 - エコシステムが整っている
 
-Cons
+⛔Cons
 - 初回アクセス時のスピンアップが長い（一度起動すれば速い）
 
 ---
-## Spring Boot + App Engine
+## 標準的なBoot Appと異なる点
 
-標準的なアプリケーションとは異なる点
-- BootのJAR実行は使えない。App Engine Dev ServerでWAR実行
+- JAR実行は使えない。App Engine Dev ServerでWAR実行
 - ログはSLF4J→Logback→標準出力→Stackdriver
 - TaskQueueやMemcacheに依存するユニットテストではApp Engine Testingのヘルパクラスを利用
 
 ---
 ## Getting Started
 
-[SpringBoot HelloWorld for App Engine Standard](https://github.com/GoogleCloudPlatform/getting-started-java/tree/master/appengine-standard-java8/springboot-appengine-standard)
-
-[Spring Boot + Kotlin + App Engine](https://github.com/int128/appengine-spring-boot-starter)
-
-
-
+- [SpringBoot HelloWorld for App Engine Standard](https://github.com/GoogleCloudPlatform/getting-started-java/tree/master/appengine-standard-java8/springboot-appengine-standard)
+- [Spring Boot + Kotlin + App Engine](https://github.com/int128/appengine-spring-boot-starter)
